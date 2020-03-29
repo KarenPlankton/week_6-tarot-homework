@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tarot spread app</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Griffy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div>
+    <h2>Log your Tarot readings  </h2>
+    <p></p>
+
+    </div>
+
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="question" class="primary">Question</label>
+                <input type="text" id="question" required />
+            </div>
+
+
+            <div class="form-item">
+                <label for="past" class="primary">Past </label>
+                <select id="past">
+                    <option value="" disabled selected></option>
+                    <option value="Fool">0 The Fool</option>
+                    <option value="Magician">I The Magician</option>
+                    <option value="Priestess">II The High Priestess</option>
+                    <option value="Empress">III The Empress</option>
+                    <option value="Emperor">IV The Emperor</option>
+                    <option value="Hierophant">V The Hierophant</option>
+                    <option value="Lovers">VI The Lovers</option>
+                    <option value="Chariot">VII The Chariot</option>
+                    <option value="Justice">VIII Justice</option>
+                    <option value="Hermit">IX The Hermit</option>
+                    <option value="Wheel">X The Wheel of Fortune</option>
+                    <option value="Strength">XI Strength</option>
+                    <option value="Hangedman">XII The Hanged Man</option>
+                    <option value="Death">XIII Death</option>
+                    <option value="Temperance">XIV Temperance</option>
+                    <option value="Devil">XV The Devil</option>
+                    <option value="Tower">XVI The Tower</option>
+                    <option value="Star">XVII The Star</option>
+                    <option value="Moon">XVIII The Moon</option>
+                    <option value="Sun">XIX The Sun</option>
+                    <option value="Judgement">XX Judgement</option>
+                    <option value="World">XXI The World</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label for="present" class="primary">Present</label>
+            <select id="present">
+                <option value="" disabled selected></option>
+                <option value="Fool">0 The Fool</option>
+                <option value="Magician">I The Magician</option>
+                <option value="Priestess">II The High Priestess</option>
+                <option value="Empress">III The Empress</option>
+                <option value="Emperor">IV The Emperor</option>
+                <option value="Hierophant">V The Hierophant</option>
+                <option value="Lovers">VI The Lovers</option>
+                <option value="Chariot">VII The Chariot</option>
+                <option value="Justice">VIII Justice</option>
+                <option value="Hermit">IX The Hermit</option>
+                <option value="Wheel">X The Wheel of Fortune</option>
+                <option value="Strength">XI Strength</option>
+                <option value="Hangedman">XII The Hanged Man</option>
+                <option value="Death">XIII Death</option>
+                <option value="Temperance">XIV Temperance</option>
+                <option value="Devil">XV The Devil</option>
+                <option value="Tower">XVI The Tower</option>
+                <option value="Star">XVII The Star</option>
+                <option value="Moon">XVIII The Moon</option>
+                <option value="Sun">XIX The Sun</option>
+                <option value="Judgement">XX Judgement</option>
+                <option value="World">XXI The World</option>
+            </select>
+        </div>
+        </div>
+
+        <div class="form-item">
+            <label for="future" class="primary">Future</label>
+            <select id="future">
+                <option value="" disabled selected></option>
+                <option value="Fool">0 The Fool</option>
+                <option value="Magician">I The Magician</option>
+                <option value="Priestess">II The High Priestess</option>
+                <option value="Empress">III The Empress</option>
+                <option value="Emperor">IV The Emperor</option>
+                <option value="Hierophant">V The Hierophant</option>
+                <option value="Lovers">VI The Lovers</option>
+                <option value="Chariot">VII The Chariot</option>
+                <option value="Justice">VIII Justice</option>
+                <option value="Hermit">IX The Hermit</option>
+                <option value="Wheel">X The Wheel of Fortune</option>
+                <option value="Strength">XI Strength</option>
+                <option value="Hangedman">XII The Hanged Man</option>
+                <option value="Death">XIII Death</option>
+                <option value="Temperance">XIV Temperance</option>
+                <option value="Devil">XV The Devil</option>
+                <option value="Tower">XVI The Tower</option>
+                <option value="Star">XVII The Star</option>
+                <option value="Moon">XVIII The Moon</option>
+                <option value="Sun">XIX The Sun</option>
+                <option value="Judgement">XX Judgement</option>
+                <option value="World">XXI The World</option>
+            </select>
+        </div>
+        </div>
+
+
+
+        <button type="submit" id="submit_name">Save</button>
+
+
+    </form>
+
+    <input type="button" onclick="resetReading()" value="Reset reading">
+
+    <h1>The sisters of fate spread</h1>
+     <ul id="anchor" class="flex-container"></ul>  
+
+
+
+
+
+</body>
+
+</html>
